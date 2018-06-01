@@ -1,27 +1,19 @@
-# CityInfoAngular
+# Synetec technical test
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+Welcome to Synetec technical test. This is an angular application displaying a list of cities with a description. We will ask you to implement a few features as the engineer who was supposed to implement them is on annual leave and this is an urgent requirement. Fortunately before leaving the engineer had the time to create the skeleton of the application which makes your life a bit easier.
 
-## Development server
+## Set up the environment
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Clone this repository locally
+2. Open the solution with your favourite IDE (we have used and tested using VS Code)
+3. Run npm install to make sure you have all the dependencies set up
+4. Run `ng serve -o` and make sure the app is running.
 
-## Code scaffolding
+## The tasks
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You are asked to implement as much tasks as possible in the following list. Don't panic if you run out of time, completing 2 tasks following good practices is better than completing the entire test with poor coding standards
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. The html for the cities list is boring and static, link it to the list of cities from the component
+2. The cities list is empty though the table is still displayed, find a way to display a message to the user when there is no city to display
+3. The backend engineers have developed an API that provides you with a list of cities, implement the method in the service that will get all the cities and fetch the result in the cities list of the component
+4. You have probably noticed that the delete button doesn't do anything, implement that feature
