@@ -16,7 +16,7 @@ Good luck!
 
 ## How to submit your completed test
 
-To sumbit your test, please 
+To submit your test, please 
 1. Fork this repository
 2. Complete the test as per the instructions below 
 3. Commit your changes to your (forked) repo 
