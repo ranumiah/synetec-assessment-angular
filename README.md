@@ -1,19 +1,43 @@
-# Synetec technical test
+# Synetec Basic Angular MVC assessement
 
-Welcome to Synetec technical test. This is an angular application displaying a list of cities with a description. We will ask you to implement a few features as the engineer who was supposed to implement them is on annual leave and this is an urgent requirement. Fortunately before leaving the engineer had the time to create the skeleton of the application which makes your life a bit easier.
+This is Synetec's basic Angular developer assessment.
+
+If you are reading this, you most probably have been asked to complete this assessment as part of Synetec's interview process.
+
+In this repository, you will find an angular project that is the base for the assessment. 
+
+Below you will find instructions on how to setup, complete and submit your assessment. 
+
+Once you have finished, please return your updated solution by the specified means and within the agreed timeframe (if any). Please be sure to include all necessary files/resources required to build/run your solution.
+
+If you think it would be beneficial, please feel free to include a commentary or description to support any decisions you have made, or any challenges you faced.
+
+Good luck!
+
+## How to submit your completed test
+
+To sumbit your test, please 
+1. Fork this repository
+2. Complete the test as per the instructions PDF 
+3. Commit your changes to your (forked) repo 
+4. Send us an http link to your repo that contains the completed test 
+
+**This repo is Read-Only!!** So please don't try to open a pull request
 
 ## Set up the environment
 
-1. Clone this repository locally
-2. Open the solution with your favourite IDE (we have used and tested using VS Code)
-3. Run npm install to make sure you have all the dependencies set up
-4. Run `ng serve -o` and make sure the app is running.
+Once forked and cloned, set-up the solution as follows:
 
-## The tasks
+1. Open the solution with your favourite IDE (we have used and tested using VS Code)
+2. Run npm install to make sure you have all the dependencies set up
+3. Run `ng serve -o` and make sure the app is running.
 
-You are asked to implement as much tasks as possible in the following list. Don't panic if you run out of time, completing 2 tasks following good practices is better than completing the entire test with poor coding standards
+## Tasks to be completed
 
-1. The html for the cities list is boring and static, link it to the list of cities from the component
+Please complete as many as possible of the tasks listed below
+
+1. The html for the cities list is static. Link it to the list of cities from the component
 2. The cities list is empty though the table is still displayed, find a way to display a message to the user when there is no city to display
 3. The backend engineers have developed an API that provides you with a list of cities, implement the method in the service that will get all the cities and fetch the result in the cities list of the component
-4. You have probably noticed that the delete button doesn't do anything, implement that feature
+4. The delete button doesn't do anything, implement that feature
+
