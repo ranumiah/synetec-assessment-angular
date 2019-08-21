@@ -18,7 +18,7 @@ Good luck!
 
 To sumbit your test, please 
 1. Fork this repository
-2. Complete the test as per the instructions PDF 
+2. Complete the test as per the instructions below 
 3. Commit your changes to your (forked) repo 
 4. Send us an http link to your repo that contains the completed test 
 
