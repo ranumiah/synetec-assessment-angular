@@ -10,10 +10,12 @@ import { ICity } from "../../models/city.model";
 export class CitiesListComponent implements OnInit{
 
     cities: ICity[];
+    showCities: boolean;
     constructor() {
         this.cities = new Array<ICity>();
     }
 
     ngOnInit(): void {
+        this.showCities = this.cities.length != 0;
     }
 }
