@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { ICity } from "../../models/city.model";
+import { CitiesService } from "../../services/cities/cities.service";
+import { Observable } from "rxjs/Observable";
 
 @Component ({
     selector: 'cities-list',
@@ -11,11 +13,16 @@ export class CitiesListComponent implements OnInit{
 
     cities: ICity[];
     showCities: boolean;
-    constructor() {
-        this.cities = new Array<ICity>();
-    }
+    constructor(private _citiesService: CitiesService) {}
 
     ngOnInit(): void {
-        this.showCities = this.cities.length != 0;
+        this.getCities();
+    }
+
+    private getCities() {
+        this._citiesService.getListOfCities().subscribe((cities) => {
+            this.cities = cities;
+            this.showCities = this.cities != null;
+        });
     }
 }
