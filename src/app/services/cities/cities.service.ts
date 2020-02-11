@@ -12,4 +12,9 @@ export class CitiesService {
     {
         return this._citiesEndpoint.getCities();
     }
+
+    public deleteCity(id: number): Observable<void>
+    {
+        return this._citiesEndpoint.deleteCity(id);
+    }
 }

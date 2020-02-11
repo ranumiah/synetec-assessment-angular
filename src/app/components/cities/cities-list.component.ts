@@ -25,4 +25,15 @@ export class CitiesListComponent implements OnInit{
             this.showCities = this.cities != null;
         });
     }
+
+    private deleteCity(id: number) {
+        this._citiesService.deleteCity(id).subscribe(data => {
+                this.getCities();
+                },
+                error => {
+                console.error("Error deleting city {id}");
+                return Observable.throw(error);
+                }
+            );
+    }
 }

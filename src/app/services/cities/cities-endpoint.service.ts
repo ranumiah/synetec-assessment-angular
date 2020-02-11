@@ -15,4 +15,10 @@ export class CitiesEndpoint extends BaseService {
     {
         return this._httpClient.get<ICity[]>(this.getBaseUrl() + "api/cities", this.getRequestHeaders());
     }
+
+    public deleteCity(id: number): Observable<void>
+    {
+        var url = this.getBaseUrl() + "api/cities/delete-city/" +id;
+        return this._httpClient.delete<void>(url, this.getRequestHeaders());
+    }
 }
